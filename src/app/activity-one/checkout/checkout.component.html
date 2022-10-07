@@ -1,0 +1,20 @@
+<StackLayout>
+    <FlexboxLayout class="subtitle-wrapper">
+        <Label text="Personal Info" class="subtitle"></Label>
+    </FlexboxLayout>
+    <Label [text]="'Name: ' + user.firstName + ' ' + user.lastName"></Label>
+    <Label [text]="'Address: ' + user.address"></Label>
+    <Label [text]="'Email: ' + user.email"></Label>
+    <Label [text]="'Phone: ' + user.phone"></Label>
+</StackLayout>
+<FlexboxLayout class="subtitle-wrapper">
+    <Label text="Pizza Selection" class="subtitle"></Label>
+</FlexboxLayout>
+<StackLayout>
+    <Label [text]="pizzaSize"></Label>
+    <Label [text]="pizzaTopping"></Label>
+    <Label [text]="'Total: $' + pizzaPrice"></Label>
+</StackLayout>
+<FlexboxLayout justifyContent="center">
+    <button text="Edit Pizza" (tap)="editPizza()" style="width: 90%;"></button>
+</FlexboxLayout>

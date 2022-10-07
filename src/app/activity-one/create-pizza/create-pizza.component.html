@@ -1,0 +1,28 @@
+<FlexboxLayout flexDirection="column" class="flex-contaainer">
+    <FlexboxLayout class="size-wrapper">
+        <Label text="Select Size" class="size-label"></Label>
+    </FlexboxLayout>
+    <ListPicker
+    [items]="sizes"
+    (selectedIndexChange)="onSelectSize($event)"
+    [selectedIndex]="sizesArrayIdx"
+    > </ListPicker>
+    <!-- <Label [text]="sizes[sizesArrayIdx]"></Label> -->
+
+    <FlexboxLayout class="size-wrapper">
+        <Label text="Select Topping" class="size-label"></Label>
+    </FlexboxLayout>
+    <ListPicker
+    [items]="pizzaToppings"
+    (selectedIndexChange)="onSelectTopping($event)"
+    [selectedIndex]="pizzaToppingsArrayIdx"
+    > </ListPicker>
+    <FlexboxLayout class="price-wrapper">
+        <Label [text]="'$' + currentPrice" class="size-label"></Label>
+    </FlexboxLayout>
+</FlexboxLayout>
+
+<FlexboxLayout justifyContent="space-between">
+    <button text="Previous" (tap)="previous()"></button>
+    <button text="Next" (tap)="checkout()"></button>
+</FlexboxLayout>

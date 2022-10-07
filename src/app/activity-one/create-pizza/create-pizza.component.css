@@ -1,0 +1,17 @@
+.flex-contaainer {
+    color: "#3c495e";
+}
+
+ .size-wrapper {
+    /* width: 100%; */
+    background-color: rgb(168, 168, 168);
+    justify-content: center;
+ }
+ .price-wrapper {
+    /* width: 100%; */
+    background-color: #a69de8;
+    justify-content: center;
+ }
+.size-label {
+    font-size: 20;
+}

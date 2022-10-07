@@ -1,3 +1,13 @@
-<GridLayout>
-  <page-router-outlet></page-router-outlet>
-</GridLayout>
+<Frame>
+    <Page>
+        <StackLayout>
+            <StackLayout class="action-bar" backgroundColor="#a69de8">
+                <ActionBar title="Pizza Order App" class="action-bar"> </ActionBar>
+            </StackLayout>
+            <ns-activity-one></ns-activity-one>
+            <!-- <ns-checkout *ngIf="!activityOneView"></ns-checkout> -->
+            <!-- <button text="Tap me!" (tap)="onTap($event)"></button> -->
+            <!-- <Label [text]="activityOneView"></Label> -->
+        </StackLayout>
+    </Page>
+</Frame>

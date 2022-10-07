@@ -1,15 +1,25 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core'
-import { NativeScriptModule } from '@nativescript/angular'
+import { NativeScriptFormsModule, NativeScriptModule } from '@nativescript/angular'
 
-import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
-import { ItemsComponent } from './item/items.component'
-import { ItemDetailComponent } from './item/item-detail.component'
+import { ActivityOneComponent } from './activity-one/activity-one.component'
+import { CreateUserComponent } from './activity-one/create-user/create-user.component'
+import { CreatePizzaComponent } from './activity-one/create-pizza/create-pizza.component'
+import { CheckoutComponent } from './activity-one/checkout/checkout.component'
 
 @NgModule({
   bootstrap: [AppComponent],
-  imports: [NativeScriptModule, AppRoutingModule],
-  declarations: [AppComponent, ItemsComponent, ItemDetailComponent],
+  imports: [
+    NativeScriptModule,
+    NativeScriptFormsModule
+  ],
+  declarations: [
+    AppComponent,
+    ActivityOneComponent,
+    CreateUserComponent,
+    CreatePizzaComponent,
+    CheckoutComponent
+  ],
   providers: [],
   schemas: [NO_ERRORS_SCHEMA],
 })
